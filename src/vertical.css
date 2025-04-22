@@ -1,0 +1,99 @@
+
+        section {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+        }
+
+        .carousel-wrapper {
+            position: absolute;
+            display: flex;
+            gap: 20px;
+        }
+
+        .carousel-container {
+            height: 400px;
+            width: 200px;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #333;
+        }
+
+        .carousel {
+            display: flex;
+            flex-direction: column;
+            height: 1280px;
+            /* 5 items * 256px (only first set for seamless loop) */
+            animation: slide 30s linear infinite;
+            /* Reduced duration for smoother loop */
+        }
+
+        /* Middle carousel animation override */
+        .carousel-container:nth-child(2) .carousel {
+            animation: slideDown 30s linear infinite;
+        }
+
+        .classs {
+            width: 200px;
+            height: 256px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            border-radius: 10px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .classs:nth-child(1),
+        .classs:nth-child(6) {
+            background-color: #ff6b6b;
+        }
+
+        .classs:nth-child(2),
+        .classs:nth-child(7) {
+            background-color: #4ecdc4;
+        }
+
+        .classs:nth-child(3),
+        .classs:nth-child(8) {
+            background-color: #45b7d1;
+        }
+
+        .classs:nth-child(4),
+        .classs:nth-child(9) {
+            background-color: #96ceb4;
+        }
+
+        .classs:nth-child(5),
+        .classs:nth-child(10) {
+            background-color: #ffeead;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-1280px);
+                /* Move up by height of first 5 items */
+            }
+        }
+
+        @keyframes slideDown {
+            0% {
+                transform: translateY(-1280px);
+                /* Start at top of first 5 items */
+            }
+
+            100% {
+                transform: translateY(0);
+                /* Move down to bottom */
+            }
+        }
