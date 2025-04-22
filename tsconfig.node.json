@@ -1,0 +1,19 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "module": "ESNext",
+      "target": "ES2020",
+      "jsx": "react-jsx",             // 👈 Add this line
+      "outDir": "./dist",
+      "rootDir": "./",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "strict": true,
+      "skipLibCheck": true,
+      "resolveJsonModule": true,
+      "types": ["node"]
+    },
+    "include": ["**/*.ts", "**/*.tsx"],  // 👈 Include .tsx files
+    "exclude": ["node_modules", "dist"]
+  }
+  
