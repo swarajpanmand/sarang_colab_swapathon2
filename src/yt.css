@@ -1,0 +1,120 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  color: #333;
+  margin-bottom: 1%;
+  border-bottom: 1px solid #ddd;
+  padding: 5px 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.nav-links i {
+  margin-right: 5px;
+}
+
+.sub-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1%;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.Hero-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  background: white;
+  width: 60%;
+  justify-content: space-around;
+}
+
+.Product-input {
+  width: 90%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.input i {
+  color: #555;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.Quickbar {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.Image {
+  width: 96%;
+  justify-self: center;
+  height: 400px; /* Updated from 400px to 200px */
+  overflow-y: hidden;
+  border-radius: 30px;
+}
+.ImageTrack img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.navicon {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+  font-size: 0.9rem;
+}
